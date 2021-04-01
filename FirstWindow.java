@@ -14,16 +14,16 @@ public class FirstWindow extends JFrame
 	{
 		nextAlbumButton = new JButton("Change Album Cover");//saved as member variables so that event handlers can a
 		shuffleAlbumButton = new JButton("Pick Random Album");//saved as member variables so that event handlers can a
-		nextAlbumButton.setFont(new Font("Calibri",Font.BOLD,18));
-		shuffleAlbumButton.setFont(new Font("Calibri",Font.BOLD,18));
+		nextAlbumButton.setFont(new Font("Calibri",Font.BOLD,12));
+		shuffleAlbumButton.setFont(new Font("Calibri",Font.BOLD,12));
 		southPanel = new JPanel();//Flow Layout by default - will fit components at preferred height and width if they can fit
 		southPanel.add(nextAlbumButton);
 		southPanel.add(shuffleAlbumButton);
 		panel= new ImagePanel();
 		artistLabel = new JLabel("Artist: "+panel.getCurrentAlbum().getArtist());
 		albumLabel=new JLabel("Title: "+panel.getCurrentAlbum().getTitle());
-		artistLabel.setFont(new Font("Calibri",Font.BOLD,22));
-		albumLabel.setFont(new Font("Calibri",Font.BOLD,22));
+		artistLabel.setFont(new Font("Calibri",Font.BOLD,16));
+		albumLabel.setFont(new Font("Calibri",Font.BOLD,16));
 		albumInfoPanel=new JPanel();
 		albumInfoPanel.setLayout(new BoxLayout(albumInfoPanel,BoxLayout.Y_AXIS));
 		albumInfoPanel.add(artistLabel);
@@ -47,7 +47,7 @@ public class FirstWindow extends JFrame
 				panel.advanceCoverCount();
 			}
 			artistLabel.setText("Artist: "+panel.getCurrentAlbum().getArtist());
-			albumLabel.setText("Album Title: "+panel.getCurrentAlbum().getTitle());
+			albumLabel.setText("Title: "+panel.getCurrentAlbum().getTitle());
 			panel.repaint();
 		}
 	}
@@ -58,7 +58,7 @@ public class FirstWindow extends JFrame
 			
 			panel.advanceCoverCount();
 			artistLabel.setText("Artist: "+panel.getCurrentAlbum().getArtist());
-			albumLabel.setText("Album Title: "+panel.getCurrentAlbum().getTitle());
+			albumLabel.setText("Title: "+panel.getCurrentAlbum().getTitle());
 			panel.repaint();
 		}
 	}

@@ -7,7 +7,7 @@ import java.util.*;
 public class ImagePanel extends JPanel
 {
 	private int coverCount =0;
-	private AlbumInfo [] covers = {new AlbumInfo("August Greene","August Greene","C:\\Users\\Dave\\Pictures\\AugustGreene.jpg"),new AlbumInfo("Volume 2","H.E.R","C:\\Users\\Dave\\Pictures\\HER.jpg"),new AlbumInfo("Laila's Wisdom","Rapsody","C:\\Users\\Dave\\Pictures\\rapsody.jpg")};
+	private AlbumInfo [] covers = {new AlbumInfo("August Greene","August Greene","AugustGreene.jpg"),new AlbumInfo("Volume 2","H.E.R","HER.jpg"),new AlbumInfo("Laila's Wisdom","Rapsody","rapsody.jpg")};
 	public void paintComponent(Graphics g)
 	{
 		g.setColor(new Color(0,0,0));//values passed for red green and bule color components
