@@ -35,6 +35,7 @@ public class FirstWindow extends JFrame
 		nextAlbumButton.addActionListener(new NextAlbumListener()); //registers this class so that its action performed method can be called when the button is clicked
 		shuffleAlbumButton.addActionListener(new ShuffleListener());		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setResizable(false);
 		this.setSize(440,400);
 		this.setVisible(true);
 	}
